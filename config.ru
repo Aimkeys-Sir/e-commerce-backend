@@ -11,3 +11,4 @@ end
 use Rack::JSONBodyParser
 
 # use your controllers here. The last controller in 'run'
+run BuyersController
