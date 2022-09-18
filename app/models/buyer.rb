@@ -1,6 +1,6 @@
 
 #creating buyer model
-class Buyer < ActiveRecords::Base
+class Buyer < ActiveRecord::Base
     has_many :purchases
     has_many :ratings
     has_many :reviews
