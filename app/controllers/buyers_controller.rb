@@ -1,4 +1,4 @@
-class BuyerController < Sinatra::Base
+class BuyersController < Sinatra::Base
     set: default_content_type, 'application/json'
 
     get '/buyers' do
