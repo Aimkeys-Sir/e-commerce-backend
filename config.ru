@@ -1,5 +1,7 @@
 require_relative './config/environment.rb'
 
+#added comments
+
 #COR bypass
 use Rack::Cors do
     allow do

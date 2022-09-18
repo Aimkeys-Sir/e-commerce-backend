@@ -1,2 +1,3 @@
 vendor
 .bundle
+db/e_commerce_dev.db
