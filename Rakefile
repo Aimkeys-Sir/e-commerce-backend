@@ -13,6 +13,6 @@ task :server do
         puts "You got pending Israelites, cross them over the Jordan first by running `rake db:migrate`"
         return
     end
-
+#bundling
     exec "bundle exec rerun -b 'rackup config.ru'"
 end
