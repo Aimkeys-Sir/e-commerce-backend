@@ -1,5 +1,5 @@
 class BuyersController < Sinatra::Base
-    set: default_content_type, 'application/json'
+    set :default_content_type, 'application/json'
 
     get '/buyers' do
         buyers = Buyer.all
@@ -13,13 +13,21 @@ class BuyersController < Sinatra::Base
 
     get '/buyers/:id/purchases' do
         buyer = Buyer.find(params[:id])
-        purchases = buyer.purchases
-        purchases.to_json
+        buyer.purchases.to_json
     end
 
-    get '/buyers/:id/products' do
-        buyer = Buyer.find(params[:id])
-        products = buyer.products
-        products.to_json
+    get '/buyers/:id/purchases/:purchase_id' do
+        purchase = Purchase.find(params[:purchase_id])
+        purchase.to_json
+    end
+
+    get '/buyers/:id/purchases/:purchase_id/products' do
+        purchase = Purchase.find(params[:purchase_id])
+        purchase.products.to_json
+    end
+
+    get '/buyers/:id/purchases/:purchase_id/products/:product_id' do
+        product = Product.find(params[:product_id])
+        product.to_json
     end
 end
