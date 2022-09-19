@@ -1,6 +1,7 @@
 class Purchase < ActiveRecord::Base
     belongs_to :buyer
     belongs_to :product
+    belongs_to :seller
 end
 
 # # Path: app/models/buyer.rb
