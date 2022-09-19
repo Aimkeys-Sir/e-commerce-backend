@@ -1,3 +1,4 @@
+class ApplicationController < Sinatra::Base
 post '/upload' do
     # Check if user uploaded a file
     if params[:image] && params[:image][:filename]
@@ -11,3 +12,9 @@ post '/upload' do
       end
     end
   end
+
+  get '/image/:name' do
+    ext=(File.exist?  "./images/#{params[:name]}.png")? "png":(File.exist?  "./images/#{params[:name]}.jpg")? "jpg": "jpeg"
+    send_file  "./images/#{params[:name]}.#{ext}"
+  end
+end
