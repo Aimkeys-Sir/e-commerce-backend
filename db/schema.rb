@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
   create_table "buyers", force: :cascade do |t|
     t.string "first_name"
@@ -49,6 +50,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_200200) do
 <<<<<<< HEAD
 >>>>>>> 0983325 (add products migration)
 =======
+=======
+>>>>>>> d0269e8 (completed migrations)
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_184751) do
   create_table "ratings", force: :cascade do |t|
     t.integer "product_id"
@@ -60,6 +63,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_184751) do
     t.integer "product_id"
     t.integer "buyer_id"
     t.string "content"
+<<<<<<< HEAD
 >>>>>>> d0269e8 (completed migrations)
 =======
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
@@ -89,6 +93,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_193909) do
 >>>>>>> aaf9d72 (Create admins migration)
 =======
 >>>>>>> 0983325 (add products migration)
+=======
+>>>>>>> d0269e8 (completed migrations)
   end
 
 end
