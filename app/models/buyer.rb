@@ -12,4 +12,8 @@ end
     has_many :reviews
     has_many :products, through: :purchases
 end
+<<<<<<< HEAD
 >>>>>>> ce49c30 (updating migration)
+=======
+end
+>>>>>>> 96f7fa2 (deleted)
