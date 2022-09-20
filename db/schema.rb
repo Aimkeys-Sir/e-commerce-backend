@@ -41,6 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_200200) do
     t.integer "seller_id"
     t.integer "discount"
     t.string "image_name"
+<<<<<<< HEAD
 >>>>>>> 0983325 (add products migration)
 =======
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_184751) do
@@ -55,6 +56,25 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_184751) do
     t.integer "buyer_id"
     t.string "content"
 >>>>>>> d0269e8 (completed migrations)
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
+  create_table "buyers", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "password"
+    t.integer "cash_balance"
+  end
+
+  create_table "purchases", force: :cascade do |t|
+    t.integer "buyer_id"
+    t.integer "product_id"
+    t.integer "quantity"
+    t.integer "cash_paid"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> bf962c9 (resloving)
   end
 
 end
