@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
   create_table "buyers", force: :cascade do |t|
     t.string "first_name"
@@ -31,6 +32,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
 =======
+=======
+>>>>>>> 0983325 (add products migration)
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_200200) do
   create_table "products", force: :cascade do |t|
     t.string "product_name"
@@ -42,6 +45,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_200200) do
     t.integer "seller_id"
     t.integer "discount"
     t.string "image_name"
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 0983325 (add products migration)
 =======
@@ -83,6 +87,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_193909) do
     t.string "admin_password"
     t.string "admin_key"
 >>>>>>> aaf9d72 (Create admins migration)
+=======
+>>>>>>> 0983325 (add products migration)
   end
 
 end
