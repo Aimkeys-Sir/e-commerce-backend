@@ -20,6 +20,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4055bd0 (deleted)
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
   create_table "buyers", force: :cascade do |t|
     t.string "first_name"
@@ -37,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0983325 (add products migration)
@@ -279,6 +283,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_190116) do
     t.string "seller_name"
     t.string "email"
     t.string "password"
+=======
+>>>>>>> 4055bd0 (deleted)
   end
 
 end
