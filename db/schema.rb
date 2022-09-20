@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_09_18_204829) do
   create_table "buyers", force: :cascade do |t|
     t.string "first_name"
@@ -95,6 +96,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_18_193909) do
 >>>>>>> 0983325 (add products migration)
 =======
 >>>>>>> d0269e8 (completed migrations)
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_09_18_190116) do
+  create_table "sellers", force: :cascade do |t|
+    t.string "seller_name"
+    t.string "email"
+    t.string "password"
+>>>>>>> b2f51fd (adding changes in daniel-obare)
   end
 
 end
