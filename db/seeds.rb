@@ -17,7 +17,8 @@ end
         dimensions: "#{rand(100..6000)},#{rand(100..6000)},#{rand(100..6000)}",
         price:rand(20...200)*10,
         seller_id: Seller.all[rand(Seller.count)].id,
-        discount:rand(55)
+        discount:rand(55),
+        image_name: "https://loremflickr.com/#{rand(150..200)}/#{rand(150..200)}/all",
     )
 end
 50.times do 
