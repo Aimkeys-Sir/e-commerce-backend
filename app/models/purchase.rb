@@ -3,6 +3,7 @@ class Purchase < ActiveRecord::Base
     belongs_to :product
     belongs_to :seller
 end
+<<<<<<< HEAD
 
 # # Path: app/models/buyer.rb
 # class Buyer < ActiveRecord::Base
@@ -24,3 +25,5 @@ end
 #         buyers.to_json
 #     end
 # end
+=======
+>>>>>>> 21831ccde21350e02ea6d883c8311cd18587d81f
