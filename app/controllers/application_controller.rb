@@ -14,7 +14,11 @@ post '/upload' do
   end
 
   get '/image/:name' do
-    ext=(File.exist?  "./images/#{params[:name]}.png")? "png":(File.exist?  "./images/#{params[:name]}.jpg")? "jpg": "jpeg"
+    ext=(File.exist?  "./images/#{params[:name]}.png")? "png":(File.
+      
+      
+      
+exist?  "./images/#{params[:name]}.jpg")? "jpg": "jpeg"
     send_file  "./images/#{params[:name]}.#{ext}"
   end
 end
