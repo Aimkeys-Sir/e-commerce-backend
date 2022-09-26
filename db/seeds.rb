@@ -23,6 +23,7 @@ end
 end
 50.times do 
     Buyer.create(
+<<<<<<< HEAD
         first_name:Faker::Name.first_name ,
         last_name:Faker::Name.last_name ,
         email:Faker::Internet.email,
@@ -32,6 +33,13 @@ end
 end
 200.times do
     Purchase.create(
+=======
+
+    )
+end
+200.times do
+    Purchases.create(
+>>>>>>> dab9639 (deleted)
         buyer_id: Buyer.all[rand(Buyer.count)].id,
         product_id: Product.all[rand(Product.count)].id,
         quantity:[1,1,1,2,2,2,3,3,4][rand(9)],

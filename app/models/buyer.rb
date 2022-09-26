@@ -6,3 +6,4 @@ class Buyer < ActiveRecord::Base
     has_many :products, through: :reviews
     has_many :products, through: :ratings
 end
+    
